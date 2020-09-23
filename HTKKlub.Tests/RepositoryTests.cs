@@ -33,7 +33,7 @@ namespace HTKKlub.Tests
         }
 
         /// <summary>
-        /// Tests that all orders are returned
+        /// Tests that all members are returned
         /// </summary>
         /// <returns></returns>
         [TestMethod]
