@@ -18,7 +18,7 @@ namespace HTK.DataAccess
         /// <returns></returns>
         public override async Task<IEnumerable<Ranking>> GetAllAsync()
         {
-            return await context.Set<Ranking>().Include("Members").OrderBy(r => r.Points).ToListAsync();
+            return await context.Set<Ranking>().Include("Members").OrderByDescending(r => r.Points).ToListAsync();
         }
     }
 }
