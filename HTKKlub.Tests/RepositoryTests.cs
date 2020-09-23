@@ -37,7 +37,7 @@ namespace HTKKlub.Tests
         /// </summary>
         /// <returns></returns>
         [TestMethod]
-        public async Task GetAllOrders()
+        public async Task GetAllMembers()
         {
             // Arrange
             RepositoryBase<Member> repository;
