@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTKKlub.Desktop.Gui", "HTKKlub.Desktop.Gui\HTKKlub.Desktop.Gui.csproj", "{69FC8D21-5BB5-4295-AEE4-50BA5BC174BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTK.Desktop.Gui", "HTK.Desktop.Gui\HTK.Desktop.Gui.csproj", "{69FC8D21-5BB5-4295-AEE4-50BA5BC174BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTKKlub.WebApi", "HTKKlub.WebApi\HTKKlub.WebApi.csproj", "{C43EE2D0-BAAD-4F47-A4F6-5B5058E235F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTK.WebApi", "HTK.WebApi\HTK.WebApi.csproj", "{C43EE2D0-BAAD-4F47-A4F6-5B5058E235F8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTKKlub.Utilities", "HTKKlub.Utilities\HTKKlub.Utilities.csproj", "{528759A0-B437-49A4-9626-425CC955C045}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTK.Utilities", "HTK.Utilities\HTK.Utilities.csproj", "{528759A0-B437-49A4-9626-425CC955C045}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTKKlub.Entities", "HTKKlub.Entities\HTKKlub.Entities.csproj", "{05D34AB3-2EFD-4920-9DC7-A6E34936127D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTK.Entities", "HTK.Entities\HTK.Entities.csproj", "{05D34AB3-2EFD-4920-9DC7-A6E34936127D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTKKlub.Logging", "HTKKlub.Logging\HTKKlub.Logging.csproj", "{4457F755-6DB2-4F9C-BBBD-4E5B9375143B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTK.Logging", "HTK.Logging\HTK.Logging.csproj", "{4457F755-6DB2-4F9C-BBBD-4E5B9375143B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTKKlub.DataAccess", "HTKKlub.DataAccess\HTKKlub.DataAccess.csproj", "{4AD77B4D-499B-4F63-B696-1C9DB2C6670D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTK.DataAccess", "HTK.DataAccess\HTK.DataAccess.csproj", "{4AD77B4D-499B-4F63-B696-1C9DB2C6670D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTKKlub.Services", "HTKKlub.Services\HTKKlub.Services.csproj", "{A6ADF13A-F7C3-4704-B20D-D77E71B3A107}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTK.Services", "HTK.Services\HTK.Services.csproj", "{A6ADF13A-F7C3-4704-B20D-D77E71B3A107}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTKKlub.Tests", "HTKKlub.Tests\HTKKlub.Tests.csproj", "{B4CCAAE1-EC6B-4119-BBD3-E134E43FCE94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTK.Tests", "HTK.Tests\HTK.Tests.csproj", "{B4CCAAE1-EC6B-4119-BBD3-E134E43FCE94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
