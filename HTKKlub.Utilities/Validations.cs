@@ -102,20 +102,20 @@ namespace HTKKlub.Utilities
         /// </summary>
         /// <param name="input"></param>
         /// <returns>(<see cref="bool"/>, <see cref="string"/>)</returns>
-        public static (bool, string) ValidateIsDateBefore(DateTime firstDate, DateTime secondDate)
+        public static (bool, string) ValidateIsDateBefore(DateTime beforeDate, DateTime afterDate)
         {
             // Null check
-            if(firstDate == null || secondDate == null)
+            if(beforeDate == null || afterDate == null)
             {
                 return (false, "A date cannot be null");
             }
 
             // Convert dates to ints
-            int first = Convert.ToInt32(firstDate.ToString("yyyyMMdd"));
-            int second = Convert.ToInt32(secondDate.ToString("yyyyMMdd"));
+            int before = Convert.ToInt32(beforeDate.ToString("yyyyMMdd"));
+            int after = Convert.ToInt32(afterDate.ToString("yyyyMMdd"));
 
-            // Check if first is higher than second
-            if(first > second)
+            // Check after is higher than before
+            if(before < after)
             {
                 return (true, string.Empty);
             }

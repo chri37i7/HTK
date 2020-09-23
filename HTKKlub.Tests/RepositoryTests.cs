@@ -18,7 +18,7 @@ namespace HTKKlub.Tests
         /// </summary>
         /// <returns></returns>
         [TestMethod]
-        public async Task GetMemberById()
+        public virtual async Task GetMemberById()
         {
             // Arrange
             RepositoryBase<Member> repository;
@@ -37,7 +37,7 @@ namespace HTKKlub.Tests
         /// </summary>
         /// <returns></returns>
         [TestMethod]
-        public async Task GetAllMembers()
+        public virtual async Task GetAllMembers()
         {
             // Arrange
             RepositoryBase<Member> repository;
