@@ -4,5 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HTK.DataAccess\HTK.DataAccess.csproj" />
+    <ProjectReference Include="..\HTK.Entities\HTK.Entities.csproj" />
+  </ItemGroup>
+
 
 </Project>
