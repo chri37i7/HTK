@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace HTKKlub.Logging
 {
+    /// <summary>
+    /// Static logging class for logging exceptions to a text document
+    /// </summary>
     public static class Logger
     {
         /// <summary>
@@ -60,6 +63,7 @@ namespace HTKKlub.Logging
             // Get original Exception
             Exception original = ex.GetOriginalException();
 
+            // Write log 
             WriteLog(
                 $"Exception: {ex.Message}\n" +
                 $"Stacktrace:\n{ex.StackTrace}\n" +
@@ -79,6 +83,7 @@ namespace HTKKlub.Logging
             // Get original Exception
             Exception innerException = exception.GetOriginalException();
 
+            // Write log asynchronously
             await WriteLogAsync(
                 $"Exception: {exception.Message}\n" +
                 $"Stacktrace:\n{exception.StackTrace}\n" +
