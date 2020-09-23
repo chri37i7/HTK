@@ -161,7 +161,7 @@ namespace HTKKlub.Entities.Models
             {
                 if(endTime != value)
                 {
-                    (bool isValid, string errorMessage) = Validations.ValidateIsDateAfter(value, startTime);
+                    (bool isValid, string errorMessage) = Validations.ValidateIsDateBefore(startTime, value);
                     if(isValid)
                     {
                         endTime = value;
