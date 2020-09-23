@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace HTKKlub.Entities
+namespace HTKKlub.Entities.Models
 {
     public partial class Ranking
     {
