@@ -1,21 +1,23 @@
 ﻿using HTKKlub.Utilities;
-
 using System;
-using System.Collections.Generic;
-
-#nullable disable
 
 namespace HTKKlub.Entities.Models
 {
+    /// <summary>
+    /// <see cref="Reservation"/> represents a <see cref="Court"/> reservation by two <see cref="Member"/>s
+    /// </summary>
     public partial class Reservation
     {
+        #region Fields
         int pkReservationId;
         int fkCourtId;
         int fkFirstMember;
         int fkSecondMember;
         DateTime startTime;
         DateTime endTime;
+        #endregion
 
+        #region Properties
         /// <summary>
         /// Id of the <see cref="Reservation"/>
         /// </summary>
@@ -123,7 +125,7 @@ namespace HTKKlub.Entities.Models
         /// <summary>
         /// The starting time of the <see cref="Reservation"/>
         /// </summary>
-        public DateTime StartTime
+        public virtual DateTime StartTime
         {
             get
             {
@@ -149,7 +151,7 @@ namespace HTKKlub.Entities.Models
         /// <summary>
         /// The time of which the <see cref="Reservation"/> ends
         /// </summary>
-        public DateTime EndTime
+        public virtual DateTime EndTime
         {
             get
             {
@@ -172,8 +174,12 @@ namespace HTKKlub.Entities.Models
             }
         }
 
+        #endregion
+
+        #region Navigation Properties
         public virtual Court FkCourt { get; set; }
         public virtual Member FkFirstMemberNavigation { get; set; }
-        public virtual Member FkSecondMemberNavigation { get; set; }
+        public virtual Member FkSecondMemberNavigation { get; set; } 
+        #endregion
     }
 }
