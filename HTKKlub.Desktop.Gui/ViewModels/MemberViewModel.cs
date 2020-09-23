@@ -1,4 +1,5 @@
 ﻿using HTKKlub.DataAccess.Base;
+using HTKKlub.DataAccess.Factory;
 using HTKKlub.Desktop.Gui.ViewModels.Base;
 using HTKKlub.Entities.Models;
 using HTKKlub.Utilities;
@@ -18,6 +19,7 @@ namespace HTKKlub.Desktop.Gui.ViewModels
         #region Constructor
         public MemberViewModel()
         {
+            // Initialize collection to prevent error with the ReplaceWith extention method
             members = new ObservableCollection<Member>();
         }
         #endregion
@@ -61,13 +63,15 @@ namespace HTKKlub.Desktop.Gui.ViewModels
         /// <returns></returns>
         protected override async Task LoadAllAsync()
         {
-            // Create repository object
-            RepositoryBase<Member> repo = new RepositoryBase<Member>();
-            // Get all members
-            IEnumerable<Member> members = await repo.GetAllAsync();
+            // Create factory, and get the instance
+            RepositoryFactory<RepositoryBase<Member>, Member> memberFactory = RepositoryFactory<RepositoryBase<Member>, Member>.GetInstance();
+            // Create repository with the factory
+            RepositoryBase<Member> memberRepository = memberFactory.Create();
+            // Get all reservations
+            IEnumerable<Member> members = await memberRepository.GetAllAsync();
             // Replace collection
             Members.ReplaceWith(members);
-        } 
+        }
         #endregion
     }
 }
