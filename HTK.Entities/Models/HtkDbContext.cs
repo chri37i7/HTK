@@ -66,7 +66,8 @@ namespace HTK.Entities.Models
                     .HasMaxLength(100);
 
                 entity.Property(e => e.Phone)
-                .IsRequired();
+                    .IsRequired()
+                    .HasMaxLength(50);
             });
 
             modelBuilder.Entity<Ranking>(entity =>

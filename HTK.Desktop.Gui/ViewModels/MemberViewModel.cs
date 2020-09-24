@@ -203,7 +203,7 @@ namespace HTK.Desktop.Gui.ViewModels
             Lastname = SelectedItem.Lastname;
             Address = SelectedItem.Address;
             Email = SelectedItem.Email;
-            Phone = SelectedItem.Phone.ToString();
+            Phone = SelectedItem.Phone;
             Birthdate = SelectedItem.Birthdate;
 
         }
@@ -239,7 +239,7 @@ namespace HTK.Desktop.Gui.ViewModels
                 Lastname = member.Lastname;
                 Address = member.Address;
                 Email = member.Email;
-                Phone = member.Phone.ToString();
+                Phone = member.Phone;
                 Birthdate = member.Birthdate;
             }
         }
@@ -275,7 +275,7 @@ namespace HTK.Desktop.Gui.ViewModels
                     SelectedItem.Lastname = Lastname;
                     SelectedItem.Address = Address;
                     SelectedItem.Email = Email;
-                    SelectedItem.Phone = Convert.ToInt32(Phone);
+                    SelectedItem.Phone = Phone;
                     SelectedItem.Birthdate = Birthdate;
 
                     // Save changes made
@@ -289,7 +289,7 @@ namespace HTK.Desktop.Gui.ViewModels
                         Lastname = Lastname,
                         Address = Address,
                         Email = Email,
-                        Phone = Convert.ToInt32(Phone),
+                        Phone = Phone,
                         Birthdate = Birthdate,
                     };
 

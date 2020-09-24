@@ -18,7 +18,7 @@ namespace HTK.Entities.Models
         public string Address { get; set; }
         public string Email { get; set; }
         public DateTime Birthdate { get; set; }
-        public int Phone { get; set; }
+        public string Phone { get; set; }
 
         public virtual ICollection<Ranking> Rankings { get; set; }
         public virtual ICollection<Reservation> ReservationFkFirstMemberNavigations { get; set; }
