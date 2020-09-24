@@ -64,7 +64,7 @@ namespace HTK.Entities.Models
                     }
                     else
                     {
-                        throw new ArgumentException(errorMessage, nameof(PkReservationId));
+                        throw new ArgumentException(errorMessage, nameof(FkCourtId));
                     }
                 }
             }
@@ -90,7 +90,7 @@ namespace HTK.Entities.Models
                     }
                     else
                     {
-                        throw new ArgumentException(errorMessage, nameof(PkReservationId));
+                        throw new ArgumentException(errorMessage, nameof(FkFirstMember));
                     }
                 }
             }
@@ -116,7 +116,7 @@ namespace HTK.Entities.Models
                     }
                     else
                     {
-                        throw new ArgumentException(errorMessage, nameof(PkReservationId));
+                        throw new ArgumentException(errorMessage, nameof(FkSecondMember));
                     }
                 }
             }
@@ -173,7 +173,6 @@ namespace HTK.Entities.Models
                 }
             }
         }
-
         #endregion
 
         #region Navigation Properties
