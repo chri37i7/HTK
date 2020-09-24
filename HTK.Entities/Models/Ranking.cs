@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-#nullable disable
-
-namespace HTK.Entities.Models
+﻿namespace HTK.Entities.Models
 {
     public partial class Ranking
     {

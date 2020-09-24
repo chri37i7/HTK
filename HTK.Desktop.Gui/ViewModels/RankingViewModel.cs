@@ -8,19 +8,23 @@ using System.Threading.Tasks;
 
 namespace HTK.Desktop.Gui.ViewModels
 {
-    public class ReservationViewModel : ViewModelBase<Reservation>
+    public class RankingViewModel : ViewModelBase<Ranking>
     {
         #region Methods
+        /// <summary>
+        /// Loads all members in from the database
+        /// </summary>
+        /// <returns></returns>
         protected override async Task LoadAllAsync()
         {
             // Create factory, and get the instance
-            RepositoryFactory<ReservationRepository, Reservation> reservationFactory = RepositoryFactory<ReservationRepository, Reservation>.GetInstance();
+            RepositoryFactory<RankingRepository, Ranking> rankingFactory = RepositoryFactory<RankingRepository, Ranking>.GetInstance();
             // Create repository with the factory
-            ReservationRepository reservationRepository = reservationFactory.Create();
+            RankingRepository rankingRepository = rankingFactory.Create();
             // Get all reservations
-            IEnumerable<Reservation> reservations = await reservationRepository.GetAllAsync();
+            IEnumerable<Ranking> rankings = await rankingRepository.GetAllAsync();
             // Replace collection
-            Items.ReplaceWith(reservations);
+            Items.ReplaceWith(rankings);
         }
         #endregion
     }

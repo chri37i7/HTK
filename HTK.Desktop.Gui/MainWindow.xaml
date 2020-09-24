@@ -4,11 +4,30 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HTK.Gui"
+        xmlns:usercontrols="clr-namespace:HTK.Desktop.Gui.UserControls"
         mc:Ignorable="d"
-        Title="H Tennis Klub "
+        Title="H Tennis Klub"
         Height="450"
         Width="800">
-    <Grid>
 
+    <Grid>
+        <!-- Tabs -->
+        <TabControl Background="WhiteSmoke">
+
+            <!--#region Members-->
+            <TabItem Header="Medlemmer">
+                <usercontrols:MemberControl />
+            </TabItem>
+            <!--#endregion-->
+
+            <!--#region Courts -->
+            <TabItem Header="Tennis Baner">
+                <usercontrols:CourtControl />
+            </TabItem>
+            <!--#endregion-->
+
+        </TabControl>
+        <!--#endregion-->
     </Grid>
+    
 </Window>

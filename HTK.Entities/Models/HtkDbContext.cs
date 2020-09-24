@@ -1,9 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-using HTK.Entities;
-
-#nullable disable
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace HTK.Entities.Models
 {
@@ -69,6 +64,9 @@ namespace HTK.Entities.Models
                 entity.Property(e => e.Lastname)
                     .IsRequired()
                     .HasMaxLength(100);
+
+                entity.Property(e => e.Phone)
+                .IsRequired();
             });
 
             modelBuilder.Entity<Ranking>(entity =>

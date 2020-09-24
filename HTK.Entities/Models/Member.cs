@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-#nullable disable
-
 namespace HTK.Entities.Models
 {
     public partial class Member
@@ -20,9 +18,15 @@ namespace HTK.Entities.Models
         public string Address { get; set; }
         public string Email { get; set; }
         public DateTime Birthdate { get; set; }
+        public int Phone { get; set; }
 
         public virtual ICollection<Ranking> Rankings { get; set; }
         public virtual ICollection<Reservation> ReservationFkFirstMemberNavigations { get; set; }
         public virtual ICollection<Reservation> ReservationFkSecondMemberNavigations { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Firstname} {Lastname}";
+        }
     }
 }
