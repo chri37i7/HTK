@@ -19,11 +19,13 @@ namespace HTK.Desktop.Gui.ViewModels
         protected Member selectedMember;
         #endregion
 
+        #region Constructor
         public ReservationViewModel()
         {
             courts = new ObservableCollection<Court>();
             members = new ObservableCollection<Member>();
-        }
+        } 
+        #endregion
 
         #region Properties
 
@@ -106,6 +108,16 @@ namespace HTK.Desktop.Gui.ViewModels
             IEnumerable<Court> courts = await courtRepository.GetAllAsync();
             // Replace collection
             Courts.ReplaceWith(courts);
+
+
+            // Create factory, and get the instance
+            RepositoryFactory<RepositoryBase<Member>, Member> memberFactory = RepositoryFactory<RepositoryBase<Member>, Member>.GetInstance();
+            // Create repository with the factory
+            RepositoryBase<Member> memberRepository = memberFactory.Create();
+            // Get all reservations
+            IEnumerable<Member> members = await memberRepository.GetAllAsync();
+            // Replace collection
+            Members.ReplaceWith(members);
         }
         #endregion
     }
