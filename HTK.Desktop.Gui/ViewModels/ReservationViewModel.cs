@@ -22,6 +22,7 @@ namespace HTK.Desktop.Gui.ViewModels
         #region Constructor
         public ReservationViewModel()
         {
+            // Initialize collections
             courts = new ObservableCollection<Court>();
             members = new ObservableCollection<Member>();
         } 

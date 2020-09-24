@@ -23,10 +23,5 @@ namespace HTK.Entities.Models
         public virtual ICollection<Ranking> Rankings { get; set; }
         public virtual ICollection<Reservation> ReservationFkFirstMember { get; set; }
         public virtual ICollection<Reservation> ReservationFkSecondMember { get; set; }
-
-        public override string ToString()
-        {
-            return $"{Firstname} {Lastname}";
-        }
     }
 }

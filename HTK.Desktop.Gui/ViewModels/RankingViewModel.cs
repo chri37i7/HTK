@@ -12,7 +12,7 @@ namespace HTK.Desktop.Gui.ViewModels
     {
         #region Methods
         /// <summary>
-        /// Loads all members in from the database
+        /// Override of <see cref="LoadAllAsync"/> to use <see cref="RankingRepository"/> instead for including navigation properties
         /// </summary>
         /// <returns></returns>
         protected override async Task LoadAllAsync()

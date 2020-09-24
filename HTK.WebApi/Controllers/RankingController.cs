@@ -10,6 +10,10 @@ namespace HTK.WebApi.Controllers
     [ApiController]
     public class RankingController : ControllerBase
     {
+        /// <summary>
+        /// Get all rankings from the database
+        /// </summary>
+        /// <returns>/returns>
         [HttpGet("all")]
         public async Task<IEnumerable<Ranking>> GetAllAsync()
         {

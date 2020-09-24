@@ -26,10 +26,10 @@ namespace HTK.Utilities
         }
 
         /// <summary>
-        /// Returns the inner most innerException
+        /// Get what was the original cause on an exception
         /// </summary>
         /// <param name="ex"></param>
-        /// <returns></returns>
+        /// <returns>The inner most innerException</returns>
         public static Exception GetOriginalException(this Exception ex)
         {
             return ex.InnerException == null ? ex : ex.InnerException.GetOriginalException();

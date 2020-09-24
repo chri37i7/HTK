@@ -9,7 +9,7 @@ namespace HTK.DataAccess
     public class ReservationRepository : RepositoryBase<Reservation>
     {
         /// <summary>
-        /// Returns all reservations included with members and which court
+        /// Returns all reservations included with members and court
         /// </summary>
         /// <returns></returns>
         public override async Task<IEnumerable<Reservation>> GetAllAsync()

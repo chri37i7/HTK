@@ -4,7 +4,7 @@ using HTK.Entities.Models;
 namespace HTK.DataAccess.Factory
 {
     /// <summary>
-    /// A Repository factory class
+    /// Factory class for incapsulating DBContext
     /// </summary>
     /// <typeparam name="TRepository"></typeparam>
     /// <typeparam name="TEntity"></typeparam>
@@ -52,7 +52,7 @@ namespace HTK.DataAccess.Factory
         }
 
         /// <summary>
-        /// Disposes the <see cref="context"/> object
+        /// Disposes of the <see cref="context"/> object
         /// </summary>
         public virtual void KillContext()
         {

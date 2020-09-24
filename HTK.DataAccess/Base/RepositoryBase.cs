@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace HTK.DataAccess.Base
 {
     /// <summary>
-    /// Base generic repository class for encapsulation of DB Context
+    /// Base generic repository class for encapsulation of DBContext functionalities
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class RepositoryBase<T> : IRepositoryBase<T> where T : class

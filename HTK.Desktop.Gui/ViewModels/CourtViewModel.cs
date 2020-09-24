@@ -113,7 +113,7 @@ namespace HTK.Desktop.Gui.ViewModels
 
         #region Add
         /// <summary>
-        /// Validates if the delete button can be pressed
+        /// Validates if the add button can be pressed
         /// </summary>
         /// <param name="parameter"></param>
         /// <returns></returns>
@@ -124,7 +124,7 @@ namespace HTK.Desktop.Gui.ViewModels
         }
 
         /// <summary>
-        /// Eventhandler for when the delete button is pressed in the view
+        /// Eventhandler for when the add button is pressed in the view
         /// </summary>
         /// <param name="parameter"></param>
         protected virtual void Add(object parameter)
@@ -140,7 +140,7 @@ namespace HTK.Desktop.Gui.ViewModels
 
         #region Edit
         /// <summary>
-        /// Validates if the delete button can be pressed
+        /// Validates if the edit button can be pressed
         /// </summary>
         /// <param name="parameter"></param>
         /// <returns></returns>
@@ -157,7 +157,7 @@ namespace HTK.Desktop.Gui.ViewModels
         }
 
         /// <summary>
-        /// Eventhandler for when the delete button is pressed in the view
+        /// Eventhandler for when the edit button is pressed in the view
         /// </summary>
         /// <param name="parameter"></param>
         protected virtual void Edit(object parameter)
@@ -170,6 +170,11 @@ namespace HTK.Desktop.Gui.ViewModels
         #endregion
 
         #region Save
+        /// <summary>
+        /// Validates if the save button can be pressed
+        /// </summary>
+        /// <param name="parameter"></param>
+        /// <returns></returns>
         protected virtual bool CanSave(object parameter)
         {
             // Null and type check
@@ -182,6 +187,10 @@ namespace HTK.Desktop.Gui.ViewModels
             return false;
         }
 
+        /// <summary>
+        /// Eventhandler for when the save button is pressed in the view
+        /// </summary>
+        /// <param name="parameter"></param>
         protected virtual async void Save(object parameter)
         {
             // Create factory, and get the instance
