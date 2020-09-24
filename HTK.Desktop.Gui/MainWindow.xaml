@@ -11,7 +11,8 @@
         Width="800">
 
     <Grid>
-        <!-- Tabs -->
+        
+        <!--#region Tab Control-->
         <TabControl Background="WhiteSmoke">
 
             <!--#region Members-->
@@ -21,13 +22,26 @@
             <!--#endregion-->
 
             <!--#region Courts -->
-            <TabItem Header="Banereservation">
+            <TabItem Header="Baner">
+                <usercontrols:CourtControl />
+            </TabItem>
+            <!--#endregion-->
+
+            <!--#region Reservations -->
+            <TabItem Header="Reservation">
                 <usercontrols:ReservationControl />
+            </TabItem>
+            <!--#endregion-->
+
+            <!--#region Rankings -->
+            <TabItem Header="Rangliste">
+                <usercontrols:RankingControl />
             </TabItem>
             <!--#endregion-->
 
         </TabControl>
         <!--#endregion-->
+        
     </Grid>
     
 </Window>

@@ -10,9 +10,11 @@ namespace HTK.Desktop.Gui.ViewModels
 {
     public class ReservationViewModel : ViewModelBase<Reservation>
     {
-
-
         #region Methods
+        /// <summary>
+        /// Override of <see cref="LoadAllAsync"/> to use <see cref="ReservationRepository"/> instead for including navigation properties
+        /// </summary>
+        /// <returns></returns>
         protected override async Task LoadAllAsync()
         {
             // Create factory, and get the instance
