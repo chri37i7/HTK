@@ -21,8 +21,8 @@
             <!--#endregion-->
 
             <!--#region Courts -->
-            <TabItem Header="Tennis Baner">
-                <usercontrols:CourtControl />
+            <TabItem Header="Banereservation">
+                <usercontrols:ReservationControl />
             </TabItem>
             <!--#endregion-->
 

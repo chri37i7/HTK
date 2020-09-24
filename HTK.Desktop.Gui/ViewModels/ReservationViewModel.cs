@@ -10,6 +10,8 @@ namespace HTK.Desktop.Gui.ViewModels
 {
     public class ReservationViewModel : ViewModelBase<Reservation>
     {
+
+
         #region Methods
         protected override async Task LoadAllAsync()
         {

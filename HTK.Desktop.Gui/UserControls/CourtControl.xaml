@@ -18,6 +18,17 @@
 
     <Grid>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <GroupBox Header="Opret Bane"
+                  Grid.Column="0">
+            
+        </GroupBox>
+
+        <local:ReservationControl Grid.Column="1"/>
     </Grid>
     
 </UserControl>
