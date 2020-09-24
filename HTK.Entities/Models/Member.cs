@@ -8,8 +8,8 @@ namespace HTK.Entities.Models
         public Member()
         {
             Rankings = new HashSet<Ranking>();
-            ReservationFkFirstMemberNavigations = new HashSet<Reservation>();
-            ReservationFkSecondMemberNavigations = new HashSet<Reservation>();
+            ReservationFkFirstMember = new HashSet<Reservation>();
+            ReservationFkSecondMember = new HashSet<Reservation>();
         }
 
         public int PkMemberId { get; set; }
@@ -21,8 +21,8 @@ namespace HTK.Entities.Models
         public string Phone { get; set; }
 
         public virtual ICollection<Ranking> Rankings { get; set; }
-        public virtual ICollection<Reservation> ReservationFkFirstMemberNavigations { get; set; }
-        public virtual ICollection<Reservation> ReservationFkSecondMemberNavigations { get; set; }
+        public virtual ICollection<Reservation> ReservationFkFirstMember { get; set; }
+        public virtual ICollection<Reservation> ReservationFkSecondMember { get; set; }
 
         public override string ToString()
         {

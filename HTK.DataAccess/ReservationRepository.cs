@@ -15,7 +15,9 @@ namespace HTK.DataAccess
         public override async Task<IEnumerable<Reservation>> GetAllAsync()
         {
             return await context.Set<Reservation>()
-                .Include("FkCourts")
+                .Include("FkCourt")
+                .Include("FkFirstMemberNavigation")
+                .Include("FkSecondMemberNavigation")
                 .ToListAsync();
         }
     }
