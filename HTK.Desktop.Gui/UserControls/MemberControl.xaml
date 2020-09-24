@@ -17,6 +17,7 @@
     <!--#endregion-->
 
     <Grid>
+        
         <!--#region Column Difinitions -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="180" />
@@ -69,6 +70,7 @@
                         CommandParameter="{Binding SelectedItem}" />
             </StackPanel>
             <!--#endregion-->
+            
         </Grid>
         <!--#endregion-->
 
