@@ -3,6 +3,9 @@ using System;
 
 namespace HTK.Entities.Models
 {
+    /// <summary>
+    /// Represents a <see cref="Ranking"/> of a HTK <see cref="Member"/>
+    /// </summary>
     public partial class Ranking
     {
         #region Fields
