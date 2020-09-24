@@ -55,7 +55,7 @@
             <StackPanel Grid.Row="1"
                         Orientation="Horizontal"
                         HorizontalAlignment="Center">
-                <Button Content="Tilføj"
+                <Button Content="Ny"
                         Width="60"
                         Command="{Binding AddCommand}" />
                 <Button Content="Rediger"
@@ -98,7 +98,10 @@
                                     Margin="0,6">
                             <Label Content="Bane"
                                    Width="80" />
-                            <ComboBox Width="150" />
+                            <ComboBox Width="150"
+                                      ItemsSource="{Binding Courts}"
+                                      SelectedItem="{Binding SelectedCourt}"
+                                      DisplayMemberPath="CourtName"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal"
                                     Margin="0,6">

@@ -28,7 +28,7 @@
             <!--#endregion-->
 
             <!--#region Reservations -->
-            <TabItem Header="Reservation">
+            <TabItem Header="Reservationer">
                 <usercontrols:ReservationControl />
             </TabItem>
             <!--#endregion-->
